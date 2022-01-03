@@ -1,8 +1,12 @@
+body {
+  background-color: #474f61;
+}
+
 .hero {
   margin-top: 80px;
   font-size: 1.5rem;
   color: white;
-  background: #474f61;
+  background: #323745;
   padding: 2rem 0;
 }
 
@@ -13,6 +17,27 @@
 
 .hero h2 {
   font-weight: 500;
+}
+
+.datumi {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.dat {
+  color: white;
 }
 
 .first-block {
@@ -115,13 +140,11 @@
 }
 
 .img-wrapper {
-  min-height: 100%;
-  width: 20rem;
-  margin-right: 4rem;
+  margin-right: 7rem;
 }
 
 .img-wrapper img {
-  width: 100%;
+  width: 20rem;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -179,6 +202,16 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cont {
+    padding-top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=projekcije.css.map */

@@ -183,6 +183,11 @@
   }
 }
 
+.footer {
+  background-color: #474f61;
+  color: white;
+}
+
 .content {
   width: 70%;
   margin: auto;
