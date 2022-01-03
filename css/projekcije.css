@@ -177,7 +177,6 @@ body {
   }
   .img-wrapper {
     margin-right: 1rem;
-    width: 15rem;
   }
   .info .tags {
     display: -webkit-box;
@@ -227,6 +226,39 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .text {
+    width: 80%;
+  }
+  .info .tags {
+    width: 70%;
+    margin: 2rem auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .datumi {
+    padding-bottom: 2rem;
+    overflow-x: scroll;
+  }
+  .info .tags {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .info .tags {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=projekcije.css.map */

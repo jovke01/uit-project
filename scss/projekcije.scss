@@ -126,7 +126,6 @@ body {
     }
     .img-wrapper {
         margin-right: 1rem;
-        width: 15rem;
     }
     .info {
         .tags {
@@ -161,5 +160,34 @@ body {
     .cont {
         padding-top: 2rem;
         flex-direction: column-reverse;
+    }
+    .text {
+        width: 80%;
+    }
+    .info {
+        .tags {
+            width: 70%;
+            margin: 2rem auto;
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .datumi {
+        padding-bottom: 2rem;
+        overflow-x: scroll;
+    }
+    .info {
+        .tags {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .info {
+        .tags {
+            flex-direction: column;
+        }
     }
 }
