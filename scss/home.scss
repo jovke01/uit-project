@@ -1,0 +1,198 @@
+.hero {
+    // background-image: url("../assets/home/matrix-poster.jpeg");
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.685), #202020), url("../assets/home/matrix-poster.jpeg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: center top;
+    align-items: center;
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .text {
+            height: 20rem;
+            justify-content: space-between;
+            .desc {
+                // padding-bottom: 1.1rem;
+                padding-bottom: 0.5rem;
+                font-size: 1.2rem;
+            }
+            .info {
+                margin-top: 1.3rem;
+                // display: flex;
+                p {
+                    // padding-right: 2rem;
+                    padding-bottom: 2rem;
+                    i {
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 90vh;
+        .wrapper {
+            flex-direction: column;
+            margin-top: 10rem;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero {
+        .wrapper {
+            margin-top: 17rem;
+        }
+        .img {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero {
+        .wrapper {
+            .text {
+                h1 {
+                    font-size: 2rem;
+                }
+                .desc {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// hero end
+// first block
+.first-block {
+    background: #353b48;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23484748' fill-opacity='0.42'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+        row-gap: 60px;
+        width: 80%;
+        padding: 3rem 0;
+        margin: auto;
+    }
+    .card {
+        margin: auto;
+        border-radius: 10px;
+        width: 400px;
+        height: 600px;
+        color: white;
+        background: #50596d;
+    }
+    .img-wrapper {
+        width: 100%;
+        max-height: 200px;
+    }
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .text {
+        padding: 2rem 2rem;
+        padding-bottom: 2.7rem;
+        h4 {
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #e84118;
+        }
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+    .info {
+        margin-top: 1rem;
+        p {
+            padding-bottom: 1rem;
+            i {
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    .link {
+        border: 2px solid white;
+        padding: 0.5rem 1.3rem;
+        border-radius: 8px;
+        margin-left: 2rem;
+        margin-top: 0rem;
+        transition: 0.2s ease;
+        i {
+            padding-left: 0.7rem;
+        }
+        &:hover {
+            color: black;
+            background: white;
+        }
+    }
+
+    .tag {
+        padding: 0.4rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .first-block {
+        .cards {
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        }
+        .card {
+            width: 320px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .first-block {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+        .card {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .first-block {
+        .cards {
+            width: 100%;
+        }
+    }
+    .card {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .first-block {
+        .card {
+            height: 700px;
+        }
+        .tags {
+            display: flex;
+            flex-direction: column;
+        }
+        .tag {
+            width: fit-content;
+            margin: 0.3rem 0;
+        }
+    }
+}
