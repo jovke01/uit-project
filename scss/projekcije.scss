@@ -26,7 +26,20 @@ body {
     margin-top: 2rem;
 }
 .dat {
+    border: 2px solid white;
+    padding: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
     color: white;
+    transition: 0.3s ease;
+    &:first-child {
+        background: #e3aa0f;
+    }
+    &:hover {
+        background: white;
+        color: black;
+    }
 }
 .first-block {
     background: #353b48;
@@ -51,7 +64,7 @@ body {
 }
 .text {
     display: flex;
-    width: 40%;
+    width: 60%;
     padding: 2rem 0;
     flex-direction: column;
     justify-content: space-around;
@@ -84,7 +97,7 @@ body {
 }
 .tp {
     text-align: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
     background: rgb(147, 55, 55);
     &:first-child {
@@ -93,7 +106,7 @@ body {
 }
 
 .img-wrapper {
-    margin-right: 7rem;
+    margin-right: 5rem;
     img {
         width: 20rem;
         height: 100%;
