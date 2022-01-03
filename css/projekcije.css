@@ -28,16 +28,24 @@
 
 .card {
   background: #353b48;
-  border: 2px solid red;
+  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
+  margin: 2rem 0;
 }
 
 .cont {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .text {
@@ -77,16 +85,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
 }
 
 .projekcije {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .paragraph {
@@ -100,8 +110,12 @@
   background: #933737;
 }
 
+.tp:first-child {
+  margin-right: 2rem;
+}
+
 .img-wrapper {
-  height: 20rem;
+  min-height: 100%;
   width: 20rem;
   margin-right: 4rem;
 }
@@ -111,5 +125,60 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .text {
+    width: 20rem;
+  }
+  .cards {
+    width: 90%;
+  }
+  .time {
+    padding: 0rem;
+  }
+  .img-wrapper {
+    margin-right: 1rem;
+    width: 15rem;
+  }
+  .info .tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info .tag {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cont {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .img-wrapper {
+    min-height: 100%;
+    width: 100%;
+    margin-right: 4rem;
+  }
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*# sourceMappingURL=projekcije.css.map */

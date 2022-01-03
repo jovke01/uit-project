@@ -23,12 +23,15 @@
 }
 .card {
     background: #353b48;
-    border: 2px solid red;
+    border: 1px solid white;
     display: flex;
     color: white;
+    margin: 2rem 0;
 }
 .cont {
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .text {
     display: flex;
@@ -53,11 +56,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 4rem;
+    justify-content: center;
+    padding: 2rem;
 }
 .projekcije {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .paragraph {
     margin-bottom: 1rem;
@@ -67,15 +71,61 @@
     padding: 1rem 1.5rem;
     border-radius: 8px;
     background: rgb(147, 55, 55);
+    &:first-child {
+        margin-right: 2rem;
+    }
 }
 
 .img-wrapper {
-    height: 20rem;
+    min-height: 100%;
     width: 20rem;
     margin-right: 4rem;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .text {
+        width: 20rem;
+    }
+    .cards {
+        width: 90%;
+    }
+    .time {
+        padding: 0rem;
+    }
+    .img-wrapper {
+        margin-right: 1rem;
+        width: 15rem;
+    }
+    .info {
+        .tags {
+            display: flex;
+            width: fit-content;
+            flex-direction: column;
+        }
+        .tag {
+            margin: 0.5rem 0;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+    .cont {
+        justify-content: space-around;
+    }
+    .img-wrapper {
+        min-height: 100%;
+        width: 100%;
+        margin-right: 4rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
