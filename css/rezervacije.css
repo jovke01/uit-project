@@ -20,19 +20,33 @@
   height: 70vh;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(57, 57, 57, 0.708)), to(rgba(57, 57, 57, 0.708))), url("../assets/galerija/pic-1.jpeg");
   background-image: linear-gradient(to left, rgba(57, 57, 57, 0.708), rgba(57, 57, 57, 0.708)), url("../assets/galerija/pic-1.jpeg");
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-block .wrapper {
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .form {
-  width: 80%;
-  margin: auto;
-  height: 70%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 20rem;
+  height: 50vh;
+  min-width: 60%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +55,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .btn {
@@ -48,15 +65,57 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  border: 2px solid white;
+  color: white;
+  background: #393939;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #393939;
+  border: #393939 solid 2px;
 }
 
 .time {
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 860px) {
+  .first-block {
+    height: auto;
+  }
+  .first-block .wrapper {
+    padding: 5rem 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .first-block .wrapper img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .first-block .wrapper {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=rezervacije.css.map */
