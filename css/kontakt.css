@@ -15,4 +15,112 @@
   font-size: 1.9rem;
   font-weight: 500;
 }
+
+.first-block {
+  padding: 4rem 0;
+  background: #353b48;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 62, 62, 0.79)), to(rgba(36, 36, 36, 0.673))), url("../assets/contact-img.jpeg");
+  background-image: linear-gradient(to right, rgba(62, 62, 62, 0.79), rgba(36, 36, 36, 0.673)), url("../assets/contact-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.first-block .wrapper {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.first-block .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first-block .text img {
+  width: 25rem;
+}
+
+.first-block span:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.first-block p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.iframe iframe {
+  width: 600px;
+  height: 450px;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-block .wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .first-block p {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tel a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .iframe {
+    width: 100%;
+  }
+  .iframe iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .first-block .text p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=kontakt.css.map */
