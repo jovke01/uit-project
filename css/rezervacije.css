@@ -20,5 +20,43 @@
   height: 70vh;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(57, 57, 57, 0.708)), to(rgba(57, 57, 57, 0.708))), url("../assets/galerija/pic-1.jpeg");
   background-image: linear-gradient(to left, rgba(57, 57, 57, 0.708), rgba(57, 57, 57, 0.708)), url("../assets/galerija/pic-1.jpeg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  width: 80%;
+  margin: auto;
+  height: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+}
+
+.time {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=rezervacije.css.map */

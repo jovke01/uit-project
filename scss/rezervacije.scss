@@ -17,4 +17,26 @@
     height: 70vh;
     background-image: linear-gradient(to left, rgba(57, 57, 57, 0.708), rgba(57, 57, 57, 0.708)),
         url("../assets/galerija/pic-1.jpeg");
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+.form {
+    width: 80%;
+    margin: auto;
+    height: 70%;
+    justify-content: space-between;
+    margin-left: 20rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    width: fit-content;
+    padding: 1rem 2rem;
+}
+.time {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
 }
