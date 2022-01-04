@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,OAAO;EACnB,OAAO,EAAE,MAAM;CAQlB;;AAbD,AAMI,KANC,CAMD,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;EACV,WAAW,EAAE,IAAI;CACpB;;AATL,AAUI,KAVC,CAUD,EAAE,CAAC;EACC,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../scss/galerija.scss"
+    ],
+    "names": [],
+    "file": "galerija.css"
+}

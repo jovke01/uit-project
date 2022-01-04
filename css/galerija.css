@@ -1,0 +1,17 @@
+.hero {
+  margin-top: 80px;
+  font-size: 1.5rem;
+  color: white;
+  background: #323745;
+  padding: 2rem 0;
+}
+
+.hero .wrapper {
+  width: 90%;
+  margin-left: auto;
+}
+
+.hero h2 {
+  font-weight: 500;
+}
+/*# sourceMappingURL=galerija.css.map */
