@@ -1,3 +1,6 @@
+body {
+    position: relative;
+}
 .hero {
     margin-top: 80px;
     font-size: 1.5rem;
@@ -34,6 +37,33 @@
         width: 300px;
         height: 300px;
         object-fit: cover;
+    }
+}
+.image-full {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    top: 70px;
+    left: 5%;
+    border: red 4px solid;
+    // background: #000;
+    object-fit: contain;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .close {
+        color: white;
+        position: absolute;
+        font-size: 2rem;
+        top: 10px;
+        right: 40px;
+        cursor: pointer;
+    }
+    &.open {
+        display: block;
     }
 }
 @media screen and (max-width: 768px) {
