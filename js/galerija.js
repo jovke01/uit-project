@@ -1,4 +1,4 @@
-const close = document.querySelector(".close");
+const closeBtn = document.querySelector(".close");
 const frame = document.querySelector(".image-full");
 const imageMain = document.querySelector(".img-frame");
 const images = document.querySelectorAll("#slika");
@@ -9,6 +9,6 @@ images.forEach((image) => {
 		frame.classList.add("open");
 	});
 });
-close.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
 	frame.classList.remove("open");
 });

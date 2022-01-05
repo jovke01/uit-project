@@ -1,5 +1,6 @@
 body {
     position: relative;
+    outline: none;
 }
 .hero {
     margin-top: 80px;
@@ -18,10 +19,12 @@ body {
 }
 .first-block {
     height: clamp(60vh, auto, 100vh);
+    outline: none;
     background: #353b48;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23484748' fill-opacity='0.42'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .slike {
+    outline: none;
     width: 80%;
     margin: auto;
     padding: 4rem 0;
