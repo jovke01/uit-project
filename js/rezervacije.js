@@ -19,29 +19,23 @@ checkedValue();
 console.log(checkedValue());
 class Rezervacija {
 	constructor(email, tel, film, number) {
-		email = this.email;
-		tel = this.tel;
-		film = this.film;
-		number = this.number;
-		// time = checkedValue();
-	}
-	displayInfo() {
-		console.log(email.value);
+		this.email = email;
+		this.tel = tel;
+		this.film = film;
+		this.number = number;
+		this.time = checkedValue();
 	}
 }
 form.addEventListener("submit", function handleSubmit(e) {
 	e.preventDefault();
-	// console.log(email.value);
-	// console.log(tel.value);
-	// console.log(film.value);
-	// console.log(checkedValue());
-	// console.log(number.value);
 	let record = new Rezervacija(
 		email.value,
 		tel.value,
 		film.value,
 		number.value
 	);
-	record.displayInfo();
+	localStorage.setItem("record1", JSON.stringify(record));
+	console.log(record);
 	console.log("btn clicked");
+	console.log(localStorage.getItem("record1"));
 });
