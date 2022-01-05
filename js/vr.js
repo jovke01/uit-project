@@ -19,7 +19,7 @@ let records = allRecords();
 
 records.forEach((record) => {
 	let parsedRecord = JSON.parse(record);
-	console.log(parsedRecord);
+	// console.log(parsedRecord);
 
 	let row = body.insertRow(-1);
 
