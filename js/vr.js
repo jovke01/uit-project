@@ -29,9 +29,3 @@ records.forEach((record) => {
 	                        <td>${parsedRecord.time}</td>
 	                        <td>${parsedRecord.number}</td>`;
 });
-
-// let cell1 = row.insertCell(0);
-// let cell2 = row.insertCell(1);
-// let cell3 = row.insertCell(2);
-// let cell4 = row.insertCell(3);
-// let cell5 = row.insertCell(4);

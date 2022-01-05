@@ -64,8 +64,9 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   cursor: pointer;
+  font-size: 1rem;
   border-radius: 8px;
   border: none;
   border: 2px solid white;
@@ -73,6 +74,10 @@
   background: #393939;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+}
+
+.btn.link {
+  padding: 0.6rem 1rem;
 }
 
 .btn:hover {
