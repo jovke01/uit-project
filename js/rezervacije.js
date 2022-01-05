@@ -18,8 +18,7 @@ function checkedValue() {
 // checkedValue();
 // console.log(checkedValue());
 class Rezervacija {
-	constructor(id, email, tel, film, number) {
-		this.id = id;
+	constructor(email, tel, film, number) {
 		this.email = email;
 		this.tel = tel;
 		this.film = film;
@@ -30,16 +29,15 @@ class Rezervacija {
 
 form.addEventListener("submit", function handleSubmit(e) {
 	e.preventDefault();
-	let uid = Math.floor(Math.random() * 1000 + 1);
+	let timeStamp = new Date();
 	let record = new Rezervacija(
-		uid,
 		email.value,
 		tel.value,
 		film.value,
 		number.value
 	);
 
-	localStorage.setItem(`record${uid}`, JSON.stringify(record));
+	localStorage.setItem(timeStamp, JSON.stringify(record));
 	console.log(record);
 	console.log("btn clicked");
 });
