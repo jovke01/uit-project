@@ -29,16 +29,20 @@
     }
 }
 .form {
-    height: 50vh;
+    height: 60vh;
     min-width: 60%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    input {
+        padding: 5px 10px;
+    }
 }
 .btn {
     width: fit-content;
     padding: 0.7rem 2rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 8px;
@@ -55,6 +59,18 @@
         color: #393939;
         border: #393939 solid 2px;
     }
+}
+.links {
+    margin-top: 1rem;
+    display: flex;
+    a:first-child {
+        margin-right: 1rem;
+    }
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
 }
 .time {
     // width: 40%;
@@ -80,5 +96,10 @@
         .wrapper {
             width: 90%;
         }
+    }
+}
+@media screen and (max-width: 375px) {
+    .links {
+        flex-direction: column;
     }
 }
