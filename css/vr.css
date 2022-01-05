@@ -1,0 +1,56 @@
+.hero {
+  margin-top: 80px;
+  font-size: 1.5rem;
+  color: white;
+  background: #323745;
+  padding: 2rem 0;
+}
+
+.hero .wrapper {
+  width: 90%;
+  margin-left: auto;
+}
+
+.hero h2 {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.first-block {
+  min-height: 70vh;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(57, 57, 57, 0.708)), to(rgba(57, 57, 57, 0.708))), url("../assets/galerija/pic-1.jpeg");
+  background-image: linear-gradient(to left, rgba(57, 57, 57, 0.708), rgba(57, 57, 57, 0.708)), url("../assets/galerija/pic-1.jpeg");
+}
+
+.first-block .wrapper {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table {
+  margin: 10rem 20rem;
+  background: #4b4949;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  text-align: left;
+  background-color: #1f1f1f;
+  color: white;
+}
+/*# sourceMappingURL=vr.css.map */
