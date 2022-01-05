@@ -15,10 +15,11 @@ function checkedValue() {
 	}
 	return timeValue;
 }
-checkedValue();
-console.log(checkedValue());
+// checkedValue();
+// console.log(checkedValue());
 class Rezervacija {
-	constructor(email, tel, film, number) {
+	constructor(id, email, tel, film, number) {
+		this.id = id;
 		this.email = email;
 		this.tel = tel;
 		this.film = film;
@@ -26,16 +27,19 @@ class Rezervacija {
 		this.time = checkedValue();
 	}
 }
+
 form.addEventListener("submit", function handleSubmit(e) {
 	e.preventDefault();
+	let uid = Math.floor(Math.random() * 1000 + 1);
 	let record = new Rezervacija(
+		uid,
 		email.value,
 		tel.value,
 		film.value,
 		number.value
 	);
-	localStorage.setItem("record1", JSON.stringify(record));
+
+	localStorage.setItem(`record${uid}`, JSON.stringify(record));
 	console.log(record);
 	console.log("btn clicked");
-	console.log(localStorage.getItem("record1"));
 });
