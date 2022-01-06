@@ -23,6 +23,7 @@
 }
 
 .first-block .wrapper {
+  height: 100%;
   color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -36,7 +37,7 @@
 }
 
 .table {
-  margin: 10rem 20rem;
+  margin: 20rem;
   background: #4b4949;
   border-collapse: collapse;
   width: 80%;
@@ -54,13 +55,17 @@
   color: white;
 }
 
+.table td i {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 675px) {
   .first-block .wrapper {
     overflow: auto;
     display: block;
   }
   .table {
-    margin: 3rem 1rem;
+    margin: 20rem 1rem;
     width: 100%;
   }
 }

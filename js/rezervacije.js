@@ -18,28 +18,32 @@ function checkedValue() {
 // checkedValue();
 // console.log(checkedValue());
 class Rezervacija {
-	constructor(email, tel, film, number) {
+	constructor(email, tel, film, number, timeStamp) {
 		this.email = email;
 		this.tel = tel;
 		this.film = film;
 		this.number = number;
 		this.time = checkedValue();
+		this.timeStamp = timeStamp;
 	}
 }
 
 form.addEventListener("submit", function handleSubmit(e) {
 	e.preventDefault();
-	let timeStamp = new Date();
+	let timeStamp = Date.now();
 	let record = new Rezervacija(
 		email.value,
 		tel.value,
 		film.value,
-		number.value
+		number.value,
+		timeStamp
 	);
 
 	localStorage.setItem(timeStamp, JSON.stringify(record));
+
 	console.log(record);
 	console.log("btn clicked");
+	window.location.reload(true);
 });
 
 // vase rezervacije
